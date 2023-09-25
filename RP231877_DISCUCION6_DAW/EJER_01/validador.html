@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.E.P</title>
+    <link rel="stylesheet" href="css/validador.css">
+</head>
+<body>
+<div class="container">
+    <h1>Validador de Expresiones Regulares</h1>
+    <label for="inputType">Selecciona el tipo de validación:</label>
+    <select id="inputType">
+        <option value="ipv4">Dirección IPv4</option>
+        <option value="url">Dirección Web (URL)</option>
+        <option value="email">Dirección de Correo Electrónico</option>
+    </select>
+    <input type="text" id="inputField" placeholder="Ingresa la dirección a validar">
+    <button onclick="validateInput()">Validar</button>
+    <div class="result" id="resultMessage"></div>
+</div>
+
+<script src="js/validador.js"></script>
+</body>
+</html>
